@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Shepard DB</title>
+    <script type="application/javascript"
+        src="{{ url_for('static', filename='jquery-3.1.0.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+      <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body_content %}
+{% endblock %}
+</body>
+</html>

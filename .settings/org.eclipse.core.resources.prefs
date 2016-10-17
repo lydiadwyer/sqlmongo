@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//data/website/modules/Ceramics/controller.py=utf-8
+encoding//data/website/modules/Ceramics/model.py=utf-8
+encoding//data/website/modules/Countries/controller.py=utf-8
+encoding//data/website/modules/Countries/model.py=utf-8
+encoding//data/website/reset_database.py=utf-8
+encoding//data/website/sqlmongo.py=utf-8

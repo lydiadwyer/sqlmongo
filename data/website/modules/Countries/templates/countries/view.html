@@ -1,0 +1,22 @@
+{% extends "global.html" %}
+{% block body_content %}
+<h1>{{ entry.country_name }}</h1>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+<table>
+    <tr>
+        <td>{{ entry.country_id }}</td>
+        <td>{{ entry.country_name }}</td>
+        <td>{{ entry.country_abrev }}</td>
+        <td>{{ entry.country_created }}</td>
+        <td>
+            <a href="{{ url_for('countries.edit_country',
+                country_id=entry.country_id) }}">Edit</a>
+            <a href="{{ url_for('countries.delete_country',
+                country_id=entry.country_id) }}">Delete</a>
+        </td>
+    </tr>
+</table>
+<a href="{{ url_for('countries.view_all_countries') }}">View All</a>
+{% endblock %}
