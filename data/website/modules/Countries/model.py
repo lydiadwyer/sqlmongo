@@ -21,7 +21,7 @@ class Country(db.Model):
     country_id = Column(Integer, primary_key=True)
     country_name = Column(String(128), unique=True)
     country_abrev = Column(String(128), unique=True)
-    country_created = Column(DateTime)
+
 
 
     def __init__(self, country_name="", country_abrev=""):
