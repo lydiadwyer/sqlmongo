@@ -90,7 +90,7 @@ ENV/
 
 .project
 .pydevproject
-.pyc
+**.pyc
 .git/**
 .settings/**
 .vagrant/**
